@@ -1,6 +1,9 @@
 name: 'Appstage.io - Upload File'
 author: 'P4 Innovation Ltd'
 description: 'Upload a file to your Appstage.io Live Builds release'
+branding:
+  icon: "upload-cloud"
+  color: "red"
 inputs:
   token:
     description: 'Project Access Token'
