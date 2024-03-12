@@ -1,0 +1,19 @@
+name: 'Appstage.io - Upload File'
+author: 'P4 Innovation Ltd'
+description: 'Upload a file to your Appstage.io Live Builds release'
+inputs:
+  token:
+    description: 'Project Access Token'
+    required: true
+  filename:
+    description: 'Filename including path of file to upload'
+    required: true
+  host:
+    description: 'API host, defaults to https://www.appstage.io'
+    required: false
+outputs:
+  file:
+    description: 'JSON list of files'
+runs:
+  using: 'node20'
+  main: 'index.js'
